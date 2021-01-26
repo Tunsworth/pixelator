@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelator</title>
+  <link rel="stylesheet" type="text/css" href="/resources/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo|Exo+2|Monda|Rajdhani:500|Teko|Titillium+Web&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Teko:600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id='main'>
+    <div id='header'></div>
+    <div id="text">
+      <h4><span>TeleText</span></h4>
+    </div>
+    <div>
+      <h1><span>PIXELATOR</span></h1>
+    </div>
+    <div class="mainbody">
+      <div class="leftsection">
+        <div class="leftnames">
+          <ul>
+            <h3>Controls</h3>
+            <br>
+            <label class='blue' for="pixelSlider">Pixel Resolution (<span id="pixelValue"></span>)</label>
+            <br>
+            <input type="range" id="pixelSlider" value="4" min="1" max="12">
+            <br>
+            <label class='blue' for="BrightnessSlider">Brightness (<span id="BrightnessValue"></span>)</label>
+            <br>
+            <input id="BrightnessSlider" class="slider" type="range" value="100" min="10" max="100">
+            <br>
+            <label class='blue' for="ContrastSlider">Contrast (<span id="ContrastValue"></span>)</label>
+            <br>
+            <input type="range" id="ContrastSlider" value="0" min="-20" max="100">
+            <br>
+            <label class='blue' for="red">Red (<span id="redValue"></span>)</label>
+            <br>
+            <input id="redSlider" class="slider" type="range" value="240" min="80" max="255">
+            <br>
+            <label class='blue' for="green">Green (<span id="greenValue"></span>)</label>
+            <br>
+            <input id="greenSlider" class="slider" type="range" value="238" min="80" max="255">
+            <br>
+            <label class='blue' for="blue">Blue (<span id="blueValue"></span>)</label>
+            <br>
+            <input id="blueSlider" class="slider" type="range" value="238" min="80" max="255">
+            <br>
+            <li>
+              <button id="PaintButton" type="button" onClick="button()">Paint</button>
+              <a id="download" download="pixalated.png">
+                <button type="button" onClick="download()">Download</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightsection">
+        <div class="card" id="clip">
+          <img src="/resources/img/bridge.png" id="portrait-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div>
+      <a id='red' href="#">Link 1</a>
+    </div>
+    <div>
+      <a id='green' href="#">Link 2</a>
+    </div>
+    <div>
+      <a id='yellow' href="#">Link 3</a>
+    </div>
+    <div>
+      <a id='blue' href="#">Link 4</a>
+    </div>
+  </div>
+ 
+  <script type="text/javascript" src="/resources/js/time.js"></script>
+  <script src="/resources/js/pixelate.js"></script>
+</body>
+</html>
